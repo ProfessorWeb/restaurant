@@ -40,10 +40,14 @@ const imagesUrl = new Map([
     'https://images.unsplash.com/photo-1553527922-767df645c5f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
   ],
 ]);
+
+
 const g = function () {
-  imagesUrl.forEach(function (value, i) {
-    const html = ` <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="${value}"  data-lightbox="photos"><img class="img-fluid" src="${value}"></a></div>`;
-    gallary.insertAdjacentHTML('afterbegin', html);
+  window.addEventListener('load', function () {
+    imagesUrl.forEach(function (value, i) {
+      const html = ` <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="${value}"  data-lightbox="photos"><img class="img-fluid" src="${value}"></a></div>`;
+      gallary.insertAdjacentHTML('afterbegin', html);
+    });
   });
 };
 
