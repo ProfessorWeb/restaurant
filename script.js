@@ -55,7 +55,7 @@ links.addEventListener('click', function (e) {
   }
 });
 
-window.location.href === 'http://127.0.0.1:8080/gallary.html' ? g() : '';
+window.location.href === 'https://restaurant-chef.netlify.app/gallary.html' ? g() : '';
 
 $(document).ready(function () {
   $('body').css('display', 'none');
